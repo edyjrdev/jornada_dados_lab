@@ -22,9 +22,9 @@ ssh-keygen -t ed25519 -C "edyjrdev@gmail.com"
 ## Pyenv - Multipython
 pyenv - https://github.com/pyenv-win/pyenv-win
 ### Habilitar PowerShell para instalar  
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine  
+`Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine`  
 ### Instalar Pyenv-win  
-Invoke-WebRequest -UseBasicParsing -Uri "https://raw.githubusercontent.com/pyenv-win/pyenv-win/master/pyenv-win/install-pyenv-win.ps1" -OutFile "./install-pyenv-win.ps1"; &"./install-pyenv-win.ps1"  
+`Invoke-WebRequest -UseBasicParsing -Uri "https://raw.githubusercontent.com/pyenv-win/pyenv-win/master/pyenv-win/install-pyenv-win.ps1" -OutFile "./install-pyenv-win.ps1"; &"./install-pyenv-win.ps1"`  
 pyenv comandos  
 variaveis de ambiente config  
 PYENV=C:\Users\edyjr\.pyenv\pyenv-win  
