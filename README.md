@@ -2,6 +2,6 @@
 
 ## Roteiro de Bootcamps
 [ ] n8n (novidade)  
-[ ] Git/GitHub (saidno do basico)  
+[ ] Git/GitHub (saindo do basico)  
 [ ] SQL (saindo do intermediario)  
 [ ] Python (saindo do basico)  
