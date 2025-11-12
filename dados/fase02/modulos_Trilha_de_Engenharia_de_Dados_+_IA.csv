@@ -1,0 +1,13 @@
+,Módulo,Carga Horária (h),Objetivo
+1,"Infra, Linux e Docker",4.0,Montar base de infraestrutura para engenharia de dados
+2,Airflow Workflow Orchestration,4.0,Orquestrar pipelines de dados com Airflow
+3,Data Pipelines com Airflow 3.0 + dbt com Astro,4.0,Construir pipelines modernas com ferramentas integradas
+4,"Web Scraping, Redis, MongoDB e noSQL",4.0,Extrair e manipular dados em escala com diferentes bancos
+5,"Agentes de IA com Agno, CrewIA e Langchain",4.0,Criar agentes de IA avançados integrados a dados
+6,Extração de dados em PDF e Regex,4.0,Ler e transformar dados complexos de documentos
+7,Event-Driven com Amazon SQS e Lambda AWS,4.0,Criar pipelines orientados a eventos
+8,Arquitetura Streaming com Kafka,4.0,Processar dados em tempo real
+9,"Observabilidade com Prothes, Sentry e OpenTelemetry",4.0,"Monitorar pipelines com Prometheus, Sentry e OpenTelemetry"
+10,Infra as Code com Terraform,4.0,Criar infraestrutura escalável e versionada
+11,Design Sprint para especificação de projetos,4.0,Aprender a especificar projetos de dados de ponta a ponta
+12,DevOps e Kubernetes para Dados,4.0,Aplicar práticas de DevOps em ambientes de dados

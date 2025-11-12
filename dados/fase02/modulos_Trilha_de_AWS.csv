@@ -1,0 +1,16 @@
+,Módulo,Carga Horária (h),Objetivo
+1,"Introdução a Cloud, criando nossa conta e publicando um site na AWS via S3 e EC2",2.0,Entender fundamentos da nuvem e publicar sua primeira aplicação
+2,Serviços de Armazenamento da Núvem com S3,2.0,Armazenar e gerenciar arquivos na AWS
+3,Computação na Nuvem com EC2,2.0,Criar e administrar servidores virtuais na nuvem
+4,Gestão de Acesso com IAM,2.0,Gerenciar permissões e acessos de usuários
+5,Gerenciamento de Redes com VPC,2.0,Configurar redes privadas na AWS
+6,Integrando EC2 e VPC,2.0,Integrar servidores e redes para ambientes mais seguros
+7,Banco de dados com RDS,2.0,Criar e administrar bancos relacionais na AWS
+8,Processamento de API e Armazenamento de dados,2.0,Processar dados com serviços de API
+9,Arquitetura de Eventos,2.0,Usar eventos para acionar automações
+10,Gestão de Custos na AWS,2.0,Monitorar e otimizar custos em nuvem
+11,Lambda Functions,2.0,Criar funções serverless
+12,Amazon CLI,2.0,Operar AWS pelo terminal
+13,Amazon SQS,2.0,Trabalhar com filas de mensagens na nuvem
+14,Amazon SNS,2.0,Gerenciar notificações e assinaturas de eventos
+15,DynamoDB e Amplify,2.0,Trabalhar com bancos NoSQL e aplicações modernas

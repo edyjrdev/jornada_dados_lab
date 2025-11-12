@@ -1,0 +1,16 @@
+,Módulo,Carga Horária (h),Objetivo
+1,"Introdução ao n8n, workflows e agentes de IA",0.5,"Conhecer os conceitos básicos de automação, fluxos e uso de IA no n8n"
+2,Configuração do n8n cloud e deploy,0.5,Aprender a configurar o ambiente e publicar seus primeiros workflows na nuvem
+3,"Integração com Google: Gmail, Calendar e Sheets",1.0,Automatizar tarefas do dia a dia integrando o n8n com serviços Google
+4,Inteligência Artificial no n8n com ChatGPT,1.0,Criar agentes inteligentes dentro do n8n para responder perguntas e executar tarefas
+5,Integração com banco de dados (Postgres),1.0,Conectar o n8n a um banco relacional e executar queries automatizadas
+6,Automação com Whatsapp e Infra self-hosted,1.0,Configurar automações no WhatsApp e entender como rodar o n8n em servidores próprios
+7,Agente de e-mail,1.0,"Construir um agente que lê, interpreta e responde e-mails automaticamente"
+8,Agente financeiro com banco de dados,1.0,Criar um sistema de controle financeiro com automações ligadas a banco de dados
+9,Agente analista que cria relatórios,1.0,Gerar relatórios automatizados a partir de dados coletados
+10,Agente para ler seus documentos RA,2.0,Usar IA para interpretar e responder perguntas sobre documentos
+11,Agente que faz Web Scraping,2.0,Coletar informações da web e transformá-las em dados utilizáveis
+12,Agente nutricionista com fotos,2.0,Processar imagens de refeições e estimar calorias usando IA
+13,Crie uma equipe de Marketing,2.0,"Montar fluxos que automatizam tarefas de marketing digital (posts, e-mails, leads)"
+14,Agente suporte (clínica) no Whatsapp com voz natural,2.0,Criar um chatbot com voz natural para atendimento no WhatsApp
+15,Case real para vender clínicas médicas,3.0,Implementar um projeto completo de automação voltado a um caso real de mercado

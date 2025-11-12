@@ -1,0 +1,21 @@
+,Módulo,Carga Horária (h),Objetivo
+1,Instalação e Setup,2.0,Preparar ambiente para consultas SQL e dbt
+2,"Comandos de consulta Select, Where, GroupBy",2.0,Criar consultas e sumarizar dados
+3,Joins,2.0,Relacionar tabelas em consultas
+4,Window Function,2.0,Criar análises avançadas em SQL
+5,Projeto Completo,2.0,Consolidar fundamentos em um case real
+6,"CTE, Subqueries, Views, Temporary Tables e Materialized Views",2.0,Organizar queries complexas
+7,Criação de tabelas,2.0,Definir modelos relacionais em SQL
+8,Stored Procedured,2.0,Programar lógica dentro do banco
+9,Triggers e Functions,2.0,Programar lógica dentro do banco
+10,Transações ACID,2.0,Garantir consistência e segurança em operações no banco
+11,Perfomance e Tuning em SQL,2.0,Otimizar consultas e bancos grandes
+12,B-Tree e Index,2.0,Otimizar consultas e buscas em tabelas grandes
+13,Particionamento,2.0,Melhorar performance de queries em bases extensas
+14,dbt cloud parte 1,2.0,Criar pipelines de transformação de dados com dbt
+15,dbt cloud parte 2,2.0,Criar pipelines de transformação de dados com dbt
+16,dbt core overview,2.0,Compreender os fundamentos do dbt core
+17,ccriando nosso projeto,2.0,Configurar e iniciar um projeto dbt
+18,dbt core testes,2.0,Aplicar testes em pipelines dbt
+19,dbt core deplot,2.0,Publicar projetos dbt em ambiente produtivo
+20,"bigquery, macro e snapshots",2.0,Aplicar dbt em ambientes cloud modernos

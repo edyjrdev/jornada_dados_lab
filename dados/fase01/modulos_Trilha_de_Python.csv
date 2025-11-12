@@ -1,0 +1,21 @@
+,Módulo,Carga Horária (h),Objetivo
+1,"Python, Git e VScode: Python do Zero",2.0,Instalar ambiente e aprender a programar em Python desde o básico
+2,"TypeError, Type Check, Type Conversion, try-except e if",2.0,Tratar erros e entender como o Python lida com tipos de dados
+3,"Controle de Fluxo: DEBUG, IF, FOR, While, Listas e Dicionários",2.0,Dominar as estruturas básicas de controle e coleções
+4,Tipos complexos e Type Hint (Dicionários vs DataFrames Vs Tabelas Vs Excel),2.0,Diferenciar estruturas de dados e aplicar tipagem para organizar código
+5,"Projeto 01: Leitura e Escrita de Arquivos, lendo 1 bilhão de linhas",2.0,Trabalhar com grandes volumes de dados em Python
+6,Exercício de revisão,2.0,Consolidar fundamentos de Python com prática aplicada
+7,Funções em Python e Estrutura de Dados - Parte 1,2.0,Aprender a criar funções reutilizáveis e manipular dados de forma eficiente
+8,Funções em Python e Estrutura de Dados - Parte 2,2.0,Aprender a criar funções reutilizáveis e manipular dados de forma eficiente
+9,Funções em Python e Estrutura de Dados - Parte 3,2.0,Aprender a criar funções reutilizáveis e manipular dados de forma eficiente
+10,Aula de revisão,2.0,Reforçar conceitos e resolver dúvidas de funções e estruturas
+11,Introdução a POO,2.0,Compreender os conceitos iniciais da Programação Orientada a Objetos
+12,Introdução às Classes em Python - Parte 01,2.0,"Implementar classes, métodos e herança em Python"
+13,Introdução às Classes em Python - Parte 02,2.0,"Implementar classes, métodos e herança em Python"
+14,Introdução às Classes em Python - Parte 03,2.0,"Implementar classes, métodos e herança em Python"
+15,Introdução às Classes em Python - Parte 04,2.0,"Implementar classes, métodos e herança em Python"
+16,Aula de revisão de programação orientada a objetos + SQLModel,2.0,Revisar POO aplicando em bancos de dados com SQLModel
+17,SQLAlchemy - Conjunto de ferramentas para manipular SQL em Python,2.0,Usar ORM para manipular SQL diretamente no Python
+18,"O que é uma API? Request, Pydantic e fazendo nosso CRUD",2.0,Criar APIs do zero e integrar com banco de dados
+19,O que é uma API? Criando nossa primeira API,2.0,Criar APIs do zero e integrar com banco de dados
+20,Nosso Projeto de CRUD Backend + Frontend + Banco de Dados,2.0,"Entregar um projeto completo conectando API, frontend e banco"

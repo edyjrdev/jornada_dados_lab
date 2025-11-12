@@ -1,0 +1,25 @@
+,Módulo,Carga Horária (h),Objetivo
+1,Introdução ao Databricks e ao Lakehouse,1.5,Compreender a visão geral da plataforma e o conceito de Lakehouse.
+2,Arquitetura de Dados Moderna,1.5,"Diferenciar Data Lake, Data Warehouse e Lakehouse."
+3,Configuração do Workspace Databricks,1.5,"Aprender a criar clusters, gerenciar usuários e permissões."
+4,Primeiro Notebook no Databricks,1.5,"Executar PySpark e SQL, integrando notebooks com Git."
+5,Fundamentos do Spark e PySpark,1.5,"Entender RDDs, DataFrames e paralelismo."
+6,Transformações e Ações no Spark,1.5,"Praticar operações como filter, map, groupBy e join."
+7,Leitura e Escrita de Dados,1.5,"Carregar e salvar dados em CSV, JSON, Parquet e Delta Lake."
+8,SQL no Databricks,1.5,"Utilizar queries SQL, views e otimizações básicas."
+9,Ingestão de Dados Batch,1.5,"Integrar dados de APIs, bancos relacionais e arquivos externos."
+10,"Camadas Bronze, Silver e Gold",1.5,Implementar pipelines estruturadas no modelo de camadas.
+11,Qualidade e Governança de Dados,1.5,Aplicar schema enforcement e data quality checks.
+12,Delta Lake Avançado,1.5,"Explorar ACID transactions, time travel e otimizações."
+13,Conceitos de Streaming no Spark,1.5,Entender microbatch vs continuous e arquitetura de streaming.
+14,Structured Streaming com PySpark,1.5,Ler dados de Kafka e sockets em tempo real.
+15,Transformações e Janelas em Streaming,1.5,Realizar agregações e aplicar watermarks em fluxos.
+16,Integração com Dashboards em Tempo Real,1.5,Conectar dados em streaming ao Power BI e Databricks SQL.
+17,Orquestração com Databricks Workflows,1.5,"Configurar jobs, triggers e dependências."
+18,Integração com dbt-core e SQL,1.5,Criar modelos versionados e documentados.
+19,Infraestrutura como Código no Databricks,1.5,Automatizar clusters e permissões com Terraform.
+20,Projeto Batch + Streaming,1.5,Construir pipeline real unindo ingestão batch e streaming.
+21,Otimização de Jobs Spark,1.5,"Aplicar técnicas de particionamento, caching e adaptive execution."
+22,Segurança e Governança com Unity Catalog,1.5,"Configurar permissões, lineage e auditoria."
+23,Preparação para Certificação Databricks,1.5,Revisar conteúdo oficial e realizar simulados.
+24,Projeto Final End-to-End,1.5,"Desenvolver pipeline completo com batch, streaming, dashboards e governança."
