@@ -1,7 +1,7 @@
 # Laboratórios da Jornada de Dados 2025/2026
 
 ## Fase 01 - Roteiro de Bootcamps  
-### [ ] Trilha de I.A. com n8n – Fundamentos (novidade)  
+### Trilha de I.A. com n8n – Fundamentos (novidade)  
   -[x] Introdução ao n8n, workflows e agentes de IA  
   -[x] Configuração do n8n cloud e deploy  
   -[x] Integração com Google: Gmail, Calendar e Sheets  
@@ -18,7 +18,7 @@
   -[ ] Agente suporte (clínica) no Whatsapp com voz natural  
   -[ ] Case real para vender clínicas médicas  
 ---
-### [ ] SQL (saindo do intermediario)  
+### SQL (saindo do intermediario)  
   -[x] Instalação e Setup  
   -[x] Comandos de consulta Select, Where, GroupBy  
   -[x] Joins  
@@ -40,9 +40,9 @@
   -[ ] dbt core deplot  
   -[ ] bigquery, macro e snapshots  
 ---
-### [ ] Python (saindo do basico)  
-  - [x] Python, Git e VScode: Python do Zero  
- -[x] TypeError, Type Check, Type Conversion, try-except e if  
+### Python (saindo do basico)  
+  - [x] Python, Git e VScode: Python do Zero [Lab01](https://github.com/edyjrdev/jd2025-python-aula01)  
+ -[x] TypeError, Type Check, Type Conversion, try-except e if  [Lab02](https://github.com/edyjrdev/jd2025-python-aula02)  
  -[ ] Controle de Fluxo: DEBUG, IF, FOR, While, Listas e Dicionários  
  -[ ] Tipos complexos e Type Hint (Dicionários vs DataFrames Vs Tabelas Vs Excel)  
  -[ ] Projeto 01: Leitura e Escrita de Arquivos, lendo 1 bilhão de linhas  
