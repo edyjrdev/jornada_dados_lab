@@ -62,3 +62,6 @@
  - [ ] O que é uma API? Criando nossa primeira API  
  - [ ] Nosso Projeto de CRUD Backend + Frontend + Banco de Dados  
 ---
+
+## Referencias
+[GCP - Windows Functions](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/window-functions) 
