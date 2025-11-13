@@ -22,7 +22,7 @@
   - [x] Instalação e Setup  
   - [x] Comandos de consulta Select, Where, GroupBy  
   - [x] Joins  
-  - [ ] Window Function  
+  - [x] Window Function :sob:  
   - [ ] Projeto Completo  
   - [ ] CTE, Subqueries, Views, Temporary Tables e Materialized Views  
   - [ ] Criação de tabelas  
