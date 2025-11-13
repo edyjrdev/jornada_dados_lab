@@ -64,4 +64,4 @@
 ---
 
 ## Referencias
-[GCP - Windows Functions](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/window-functions) 
+[GCP - Windows Functions](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/window-function-calls) 
