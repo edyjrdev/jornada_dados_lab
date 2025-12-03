@@ -60,6 +60,7 @@ c:\users\edyjr\.local\bin
 pipx install poetry
 pipx upgrade poetry
 
+
 ### Config poetry para adicionar venv a cada projeto
 poetry config virtualenvs.in-project true
 
@@ -76,8 +77,9 @@ poetry remove django
 pip freeze  
 deactivate  
 
-## ipython
+## ipython e jupyterlab
 pipx install ipython
+pipx install jupyterlab
 
 ## Github CLI
 comandos
