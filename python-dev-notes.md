@@ -78,8 +78,8 @@ pip freeze
 deactivate  
 
 ## ipython e jupyterlab
-pipx install ipython
-pipx install jupyterlab
+pipx install ipython  
+pipx install jupyterlab  
 
 ## Github CLI
 comandos
