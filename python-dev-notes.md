@@ -79,7 +79,9 @@ deactivate
 
 ## ipython e jupyterlab
 pipx install ipython  
-pipx install jupyterlab  
+pipx install jupyterlab
+pipx install notebook
+pipx ensurepath  
 
 ## Github CLI
 comandos
