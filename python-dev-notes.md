@@ -82,6 +82,9 @@ pipx install ipython
 pipx install jupyterlab
 pipx install notebook
 pipx ensurepath  
+* Para executar no windows:  
+`jupyter-lab`  
+`jupyter-notebook`  
 
 ## Github CLI
 comandos
