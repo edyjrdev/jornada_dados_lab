@@ -3,7 +3,8 @@
 ## Vscode
 extensoes
 - python
-- material theme
+- material icon theme
+- SQLite |Viewer
 
 ## git
 Comandos
@@ -73,9 +74,11 @@ source .venv/Scripts/activate
 poetry add django  
 conferir arquivo pyproject.toml em dependencies - somente dependencias instaladas para o projeto  
 pip freeze > requirements.txt  
-poetry remove django  
+poetry remove django
 pip freeze  
 deactivate  
+poetry lock
+
 
 ## ipython e jupyterlab
 pipx install ipython  
