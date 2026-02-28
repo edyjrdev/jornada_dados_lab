@@ -1,5 +1,7 @@
 from curl_cffi import requests
+import time
 
+# Classe de Raspador do Pao de Açucar
 class PaoDeAcucarScraper:
     def __init__(self, pesquisa='azeite'):
         self.origin = 'https://www.paodeacucar.com'
@@ -9,6 +11,9 @@ class PaoDeAcucarScraper:
         self.totalPages = 0
         self.resultsPerPage = 48
         self.pesquisa = pesquisa
+        # Estrategia de Retry
+        self.max_retries = 4
+        self.status_codes_retry = [404, 429,500,502,503,504]
 
         # 1. Initialize a session to manage cookies automatically
         self.session = requests.Session()
@@ -47,8 +52,21 @@ class PaoDeAcucarScraper:
         }
         self.get_total_pages()
 
+    # Gemini montou essa estrategia de retry
+    # curl_cffi nao tem Retry nem HTTPAdapater
+    def request_with_retry(self, method, url, **kwargs):
+        for attempt in range(self.max_retries):
+            response = self.session.request(method, url, **kwargs)
+            # Estrategia de retry
+            if response.status_code in self.status_codes_retry:
+                time.sleep(2 ** attempt)  # Exponential backoff
+                continue
+            return response
+        return response
+
     def get_total_pages(self):
-        response = self.session.post(
+        response = self.request_with_retry(
+            "POST",
             self.api_endpoint, 
             headers=self.api_headers, 
             json=self.payload, 
@@ -83,7 +101,8 @@ class PaoDeAcucarScraper:
                 "partner": "fallback"
             }
 
-            response = self.session.post(
+            response = self.request_with_retry(
+                      "POST",
                       self.api_endpoint, 
                       headers=self.api_headers, 
                       json=self.payload, 
@@ -121,5 +140,4 @@ if prods:
                 case 'brand':
                     marca = prod["brand"]
         
-
         print(f'{n} | id:{id} | nome:{nome} | marca:{marca} | preço:{preco if preco else 0}')
