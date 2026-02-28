@@ -3,14 +3,14 @@ import time
 
 # Classe de Raspador do Pao de Açucar
 class PaoDeAcucarScraper:
-    def __init__(self, pesquisa='azeite'):
+    def __init__(self):
         self.origin = 'https://www.paodeacucar.com'
         self.referer = 'https://www.paodeacucar.com/'
         self.products = []  # lista de produtos
         self.page = 1
         self.totalPages = 0
         self.resultsPerPage = 48
-        self.pesquisa = pesquisa
+        self.pesquisa = ""
         # Estrategia de Retry
         self.max_retries = 4
         self.status_codes_retry = [404, 429,500,502,503,504]
@@ -52,6 +52,11 @@ class PaoDeAcucarScraper:
         }
         self.get_total_pages()
 
+    def start(self, pesquisa):
+        self.pesquisa = pesquisa
+        self.get_total_pages()
+        return self.products
+
     # Gemini montou essa estrategia de retry
     # curl_cffi nao tem Retry nem HTTPAdapater
     def request_with_retry(self, method, url, **kwargs):
@@ -65,25 +70,26 @@ class PaoDeAcucarScraper:
         return response
 
     def get_total_pages(self):
-        response = self.request_with_retry(
-            "POST",
-            self.api_endpoint, 
-            headers=self.api_headers, 
-            json=self.payload, 
-            impersonate="chrome"
-        )
+        try:
+            response = self.request_with_retry(
+                "POST",
+                self.api_endpoint, 
+                headers=self.api_headers, 
+                json=self.payload, 
+                impersonate="chrome"
+            )
 
-        if response.status_code == 200:
-            # Achei todas paginas para paginar
-            json = response.json()
-            self.totalPages = json.get('totalPages')
-            print(f'Pesquisa por:  {self.pesquisa}')
-            print(f'Total de Paginas: {self.totalPages}')
-            pagina_produtos = json.get('products')
-            for prod in pagina_produtos:
-                self.products.append(prod)
-            self.get_products()  # buscar demais paginas
-        else:
+            if response.status_code == 200:
+                # Achei todas paginas para paginar
+                json = response.json()
+                self.totalPages = json.get('totalPages')
+                print(f'Pesquisa por:  {self.pesquisa}')
+                print(f'Total de Paginas: {self.totalPages}')
+                pagina_produtos = json.get('products')
+                for prod in pagina_produtos:
+                    self.products.append(prod)
+                self.get_products()  # buscar demais paginas
+        except:
             print(f"Error {response.status_code}: {response.text}")
 
     def get_products(self):
@@ -101,27 +107,29 @@ class PaoDeAcucarScraper:
                 "partner": "fallback"
             }
 
-            response = self.request_with_retry(
-                      "POST",
-                      self.api_endpoint, 
-                      headers=self.api_headers, 
-                      json=self.payload, 
-                      impersonate="chrome"
-            )
+            try:
+                response = self.request_with_retry(
+                        "POST",
+                        self.api_endpoint, 
+                        headers=self.api_headers, 
+                        json=self.payload, 
+                        impersonate="chrome"
+                )
 
-            if response.status_code == 200:
-                json = response.json()
-                produts = json.get('products')
-                print(f'Baixando pagina {i} com {len(produts)}')
-                pagina_produtos = json.get('products')
-                for prod in pagina_produtos:
-                    self.products.append(prod)
-            else:
+                if response.status_code == 200:
+                    json = response.json()
+                    produts = json.get('products')
+                    print(f'Baixando pagina {i} com {len(produts)}')
+                    pagina_produtos = json.get('products')
+                    for prod in pagina_produtos:
+                        self.products.append(prod)
+            except:
                 print(f"Erro na pagina {i} - {response.status_code}: {response.text}")
-        return self.products
+
+
 
 # Execution
-prods = PaoDeAcucarScraper('coco').products
+prods = PaoDeAcucarScraper().start('arroz')
 
 if prods:
     for n, prod in enumerate(prods, start=1):
